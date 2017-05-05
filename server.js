@@ -11,11 +11,11 @@ var server = new webpackDevServer(compiler,{
   contentBase: './app',
   stats: { colors: true }
 })
-console.log('%%%%%$$$$$$$$$$$$$$$$');
-server.listen(config.port,"localhost",function(err){
+
+server.listen(8003,"localhost",function(err){
     if(err){
         console.log(err);
     }
 
-    console.log(`Listening at ${config.host}:${config.port}...`);
+    console.log(`Listening at localhost:8003...`);
 })
